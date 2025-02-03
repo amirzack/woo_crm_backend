@@ -3,9 +3,9 @@ import pkg from "@woocommerce/woocommerce-rest-api";
 const WooCommerceRestApi = pkg.default;
 
 const api = new WooCommerceRestApi({
-  url: "https://hugerofashion.com",
-  consumerKey: "ck_0f980069d6b89b6c1c085090baba7559e7a73d85",
-  consumerSecret: "cs_f84c3f2feaeecfaf8cdce19f658dd68b52ce20c4",
+  url: "https://woocommerce-url-site.com",//site domain
+  consumerKey: "Consumer key",//key from api key woocomerce
+  consumerSecret: "Consumer secret ",
   version: "wc/v3",
 });
 
