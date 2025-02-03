@@ -4,9 +4,15 @@ const WooCommerceRestApi = pkg.default;
 import CryptoJS from "crypto-js";
 
 const api = new WooCommerceRestApi({
+<<<<<<< HEAD
   url: "process.env.SITE_URL",
   consumerKey: "process.env.CONSUMER_KEY",
   consumerSecret: "process.env.CONSUMER_SECRET",
+=======
+  url: "https://woocommerce-url-site.com",//site domain
+  consumerKey: "Consumer key",//key from api key woocomerce
+  consumerSecret: "Consumer secret ",
+>>>>>>> e643c2f327bcf930b76e2fde1794065c074f606e
   version: "wc/v3",
 });
 
