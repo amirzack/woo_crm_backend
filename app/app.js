@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import orderRoutes from "../routes/orderRoutes.js";
+import webhookRoutes from "../routes/webhookRoutes.js";
 import { globalErrHandler, notFound } from "../middlewares/globalErrHandler.js";
 
 dotenv.config();
@@ -16,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 //Routes
 
 app.use("/api/v1/order", orderRoutes);
-
+app.use("/api/v1/webhook", webhookRoutes);
 
 //Error Middlewares
 app.use(notFound);

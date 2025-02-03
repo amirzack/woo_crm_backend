@@ -12,6 +12,6 @@ export const globalErrHandler = (err, req, res, next) => {
 
 export const notFound = (req, res, next) => {
   const err = new Error("Page not found!!!");
-  console.log("page not found");
+  console.log("page not found!!!");
   next(err);
 };
